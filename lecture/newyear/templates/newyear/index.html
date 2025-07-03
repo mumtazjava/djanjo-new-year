@@ -1,0 +1,26 @@
+<!-- newyear/templates/newyear/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Year</title>
+</head>
+<style>
+    
+    *{
+      background-color:pink
+    }
+    h1{
+       text-align:center
+
+
+    } 
+</style>
+ 
+<body>
+    {% if newyear %}
+        <h1 ">🎉 Happy New Year! 🎉</h1>
+    {% else %}
+        <h1 >It's not New A Year yet.</h1>
+    {% endif %}
+</body>
+</html>
