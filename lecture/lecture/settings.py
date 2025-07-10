@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'hello',
+   
     'newyear',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'lecture.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydatabase',
+        'USER': 'root',
+        'PASSWORD': 'Mumtaz@321',
+        'HOST': 'localhost',  # or '127.0.0.1'
+        'PORT': '3306',
     }
 }
 
